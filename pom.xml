@@ -22,7 +22,7 @@
 	<packaging>jar</packaging>
 
 	<name>testrelease</name>
-
+<!-- ta bort -->
 	<properties>
 	</properties>
 
