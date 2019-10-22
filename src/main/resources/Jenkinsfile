@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+    stages {
+        stage('Example stage 1') {
+            steps {
+                build job: 'cora-testrelease', parameters: [
+        [$class: 'StringParameterValue', name: 'UB_PROJECT_NAME', value: 'cora-testrelease'],
+        [$class: 'StringParameterValue', name: 'UB_BRANCH', value: 'origin/release/2.0']]//
+            }
+        }
+    }
+} 
